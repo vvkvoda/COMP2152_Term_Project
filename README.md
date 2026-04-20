@@ -15,7 +15,7 @@ Individual submission due to exceptional circumstances.
 | Vaishnavi Vodapalli | HTTP not enforced / Open Telnet port / Missing security header | individual_submission |
 
 ## Videos
-- Vaishnavi: (https://youtu.be/wjlGUKIZAhY)
+- Vaishnavi: https://youtu.be/wjlGUKIZAhY
 
 ## Target
 - Server: `0x10.cloud` and its subdomains
@@ -28,21 +28,3 @@ The server allows **10 requests per second** per IP address. If requests are sen
 ```python
 import time
 time.sleep(0.15)
-```
-
-## Repository Files
-- `vaishnavi_http_check.py` — checks whether HTTP redirects to HTTPS
-- `vaishnavi_port_check.py` — checks whether Telnet port 2323 is open
-- `vaishnavi_header_check.py` — inspects headers for a missing security header
-- `main.py` — runs all three scripts
-- `AI Usage Declaration.docx`
-
-## Vulnerability Summary
-| Script | Vulnerability |
-|--------|--------------|
-| `vaishnavi_http_check.py` | Website does not enforce HTTPS |
-| `vaishnavi_port_check.py` | Open Telnet port (2323) |
-| `vaishnavi_header_check.py` | Missing `X-Frame-Options` header |
-
-## Notes
-This repository is organized as an individual submission and uses Python standard library modules only.
